@@ -80,7 +80,7 @@ body.order-mode .cafe-items {
 .cafe-item,
 .cafe-item-shadow {
   position: relative;
-  width: 160px;
+  width: 120px;
   padding: 4px 5px 21px;
   box-sizing: border-box;
   text-align: center;
