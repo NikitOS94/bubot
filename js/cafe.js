@@ -19,6 +19,7 @@ var Cafe = {
         Cafe.userHash = options.userHash;
         Cafe.initLotties();
         $("body").show();
+        /*
         if (
             !Telegram.WebApp.initDataUnsafe ||
             !Telegram.WebApp.initDataUnsafe.query_id
@@ -28,6 +29,7 @@ var Cafe = {
             Cafe.showStatus("Cafe is temporarily closed");
             return;
         }
+        */
         $(".js-item-lottie").on("click", Cafe.eLottieClicked);
         $(".js-item-incr-btn").on("click", Cafe.eIncrClicked);
         $(".js-item-decr-btn").on("click", Cafe.eDecrClicked);
@@ -44,7 +46,7 @@ var Cafe = {
     initLotties: function () {
         $(".js-item-lottie").each(function () {
             RLottie.init(this, {
-                maxDeviceRatio: 2,
+                maxDeviceRatio: 4,
                 cachingModulo: 3,
                 noAutoPlay: true,
             });
